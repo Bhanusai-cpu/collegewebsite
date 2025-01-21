@@ -99,7 +99,6 @@ nav .fa{
     .nav-links{
         position: absolute;
         background: #f44336;
-        height: 100vh;
         width:200px;
         top:0;
         right:-200px;
@@ -117,6 +116,9 @@ nav .fa{
     .nav-links ul{
         padding:30px;
     }
+    .nav.active .nav-links {
+    display: flex;
+  }
 }
 
 
