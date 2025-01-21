@@ -118,8 +118,8 @@ nav .fa{
         padding:30px;
     }
     .nav img{
-        max-height:15px;
-        width:30px;
+        width: 200px; 
+        height: auto;
     }
 }
 
