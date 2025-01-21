@@ -117,14 +117,16 @@ nav .fa{
     .nav-links ul{
         padding:30px;
     }
-}
-
-@media (max-width: 480px) {
-   .nav img{
+     .nav img{
         width: 50px; 
         height: auto;
     }
+    .header{
+        width:50px;
+        height:auto;
+    }
 }
+
 
 .hero-btn1{
     display:inline-block;
