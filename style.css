@@ -117,8 +117,11 @@ nav .fa{
     .nav-links ul{
         padding:30px;
     }
-    .nav img{
-        width: 100px; 
+}
+
+@media (max-width: 480px) {
+   .nav img{
+        width: 50px; 
         height: auto;
     }
 }
