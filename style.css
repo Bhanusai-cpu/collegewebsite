@@ -22,9 +22,9 @@ nav{
     align-items: center;
     background-color: rgb(153, 202, 147);;
 }
-.nav img{
-    width:100px;
-    max-height: 58px;
+nav img{
+    width:300px;
+    max-height: 78px;
 }
 .nav-links{
     flex:1;
