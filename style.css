@@ -117,6 +117,9 @@ nav .fa{
     .nav-links ul{
         padding:30px;
     }
+    .nav img{
+        max-height:30px;
+    }
 }
 
 .hero-btn1{
