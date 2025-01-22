@@ -7,6 +7,19 @@ html, body {
     width: 100%;
     overflow-x: hidden; 
   }
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color:#f44336;
+  font-size: 40px;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+marquee{
+  display:inline-block;
+}
 .header{
     min-height:100vh;
     width:100%;
@@ -98,6 +111,11 @@ nav .fa{
     width: 100%;
     overflow-x: hidden; 
   }
+    .container{
+      font-size:25px;
+      padding-top: 25px;
+      padding-bottom: 0;
+    }
     .text-box h1{
         font-size: 20px;
     }
