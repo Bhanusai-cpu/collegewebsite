@@ -99,6 +99,9 @@ nav .fa{
     .nav-links ul li{
         display:block;
     }
+    body{
+        overflow-x:hidden;
+    }
     .nav-links{
         position: absolute;
         background: #f44336;
