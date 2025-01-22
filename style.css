@@ -4,7 +4,7 @@
     font-family: "Poppins", serif;
 }
 body{
-    overflow-x:hidden;
+  overflow-x: hidden;
 }
 .header{
     min-height:100vh;
@@ -98,9 +98,6 @@ nav .fa{
     }
     .nav-links ul li{
         display:block;
-    }
-    body{
-        overflow-x:hidden;
     }
     .nav-links{
         position: absolute;
