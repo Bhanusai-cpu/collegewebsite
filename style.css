@@ -136,7 +136,7 @@ nav .fa{
         overflow-x:hidden;
     }
     .nav-links{
-        position: fixed;
+        position: absolute;
         background: rgba(255,255,255,0.2);
         backdrop-filter: blur(10px);
         height:100vh;
