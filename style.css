@@ -114,7 +114,7 @@ nav .fa{
     .container{
       font-size:25px;
       padding-top: 25px;
-      padding-bottom: 0;
+      padding-bottom: 0 !important;
     }
     .text-box h1{
         font-size: 20px;
@@ -528,6 +528,10 @@ h3{
       /* Center and cover the background */
       text-align: center;
     }
+       html, body {
+    width: 100%;
+    overflow-x: hidden; 
+  }
   
     .about-col img {
       display: none;
@@ -608,6 +612,12 @@ h3{
     margin-left: 10px;
     display: flex;
   }
+ @media (max-width: 700px) {
+       html, body {
+    width: 100%;
+    overflow-x: hidden; 
+  }
+ }
 
 
  /*----------fade in and fade out-----------*/
