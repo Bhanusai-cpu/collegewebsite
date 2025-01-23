@@ -7,7 +7,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%; 
-    overflow-x: hidden; 
+    overflow-x: clip; 
 }
 
 .container {
@@ -19,7 +19,7 @@ html, body {
   font-size: 40px;
   padding-top: 50px;
   padding-bottom: 0;
-  overflow-x:hidden;
+  overflow-x:clip;
   overflow-y:hidden;
 }
 marquee{
@@ -131,7 +131,7 @@ nav .fa{
       font-size:25px;
       padding-top: 40px;
       padding-bottom: 0 !important;
-      overflow-x:hidden;
+      overflow-x:clip;
       overflow-y:hidden;
     }
     .text-box h1{
