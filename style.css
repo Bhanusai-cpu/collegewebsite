@@ -8,7 +8,6 @@ html, body {
     padding: 0;
     width: 100%; 
     overflow-x: hidden; 
-    overflow-y:hidden;
 }
 
 .container {
