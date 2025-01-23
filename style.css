@@ -20,7 +20,6 @@ html, body {
   padding-top: 50px;
   padding-bottom: 0;
   overflow-x:clip;
-  overflow-y:hidden;
 }
 marquee{
   display:inline-block;
@@ -134,7 +133,6 @@ nav .fa{
       padding-top: 40px;
       padding-bottom: 0 !important;
       overflow-x:clip;
-      overflow-y:hidden;
     }
     .text-box h1{
         font-size: 20px;
