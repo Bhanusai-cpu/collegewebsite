@@ -116,7 +116,7 @@ nav .fa{
     margin: 0;
     padding: 0;
     width: 100%;  
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
     .container{
@@ -133,7 +133,7 @@ nav .fa{
         display:block;
     }
     nav{
-        overflow-x:hidden;
+        overflow-x:clip;
     }
     .nav-links{
         position: absolute;
@@ -541,10 +541,7 @@ h3{
       /* Center and cover the background */
       text-align: center;
     }
-       html, body {
-    width: 100%;
-    overflow-x: hidden; 
-  }
+      
   
     .about-col img {
       display: none;
@@ -625,12 +622,7 @@ h3{
     margin-left: 10px;
     display: flex;
   }
- @media (max-width: 700px) {
-       html, body {
-    width: 100%;
-    overflow-x: hidden; 
-  }
- }
+
 
 
  /*----------fade in and fade out-----------*/
