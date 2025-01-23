@@ -112,13 +112,15 @@ nav img{
 nav .fa{
     display: none;
 }
-@media(max-width:480px){
-    html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;  
-    overflow-x: clip;
-}
+@media (max-width: 768px) {
+    .nav-links {
+        margin-right: 0; /* Adjust as necessary */
+        padding-right: 0; /* Adjust as necessary */
+    }
+  html,body {
+        margin-right: 0; /* Adjust as necessary */
+        padding-right: 0; /* Adjust as necessary */
+    }  
 }
 @media(max-width:700px){
    html, body {
@@ -140,9 +142,6 @@ nav .fa{
     }
     .nav-links ul li{
         display:block;
-    }
-    nav{
-        overflow-x:clip;
     }
     .nav-links{
         position: absolute;
