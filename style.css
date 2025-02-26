@@ -331,6 +331,7 @@ nav .fa{
     text-decoration: none;
     color:blue;
     border:1px solid #3bce2d;
+    border-radius:8px;
     padding:12px 34px;
     font-size: 13px;
     background: transparent;
