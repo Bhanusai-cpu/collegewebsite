@@ -44,13 +44,19 @@ function showSlider(){
         next.click();
     }, 5000)
 }
-function setPositionThumbnail () {
+function setPositionThumbnail() {
     let thumbnailActive = document.querySelector('.thumbnail .item.active');
     let rect = thumbnailActive.getBoundingClientRect();
+
     if (rect.left < 0 || rect.right > window.innerWidth) {
-        thumbnailActive.scrollIntoView({ behavior: 'smooth', inline: 'nearest' });
+        thumbnailActive.scrollIntoView({ 
+            behavior: 'smooth', 
+            inline: 'nearest', 
+            block: 'nearest'  // This prevents vertical scrolling
+        });
     }
 }
+
 
 // click thumbnail
 thumbnails.forEach((thumbnail, index) => {
