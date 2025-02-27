@@ -78,6 +78,10 @@ marquee{
   .latest-news {
       grid-template-columns: 1fr;
   }
+    .latest-img img{
+        width:100%;
+        height:150px;
+    }
 }
 svg{
     width: 25px;
