@@ -17,6 +17,67 @@ body::-webkit-scrollbar{
 marquee{
   display:inline-block;
 }
+
+/*-----latest updates-----*/
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.latest-img {
+  flex: 1;
+  text-align: center;
+}
+
+.latest-img img {
+  width: 150%;
+  height: 350px;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.latest-news {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.latest-news iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 150px; /* Control height manually */
+  border-radius: 100px; /* Half of the height makes it a capsule */
+  object-fit: cover;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+      text-align: center;
+  }
+  .latest-news {
+      grid-template-columns: 1fr;
+  }
+}
 svg{
     width: 25px;
 }
