@@ -549,33 +549,7 @@ nav .fa{
     grid-template-columns: 1fr; /* 1 card per row */
   }
 }
-.course-det p{
-    text-align:justify;
-    color:#666666;
-    font-size: 14px;
-    font-family: 'Open Sans', sans-serif;
-    unicode-bidi: isolate;
-}
 
-.course-det h2{
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    line-height: 1.42857143;
-    color: #333333;
-}
-.course1{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
 
 /*---------campus---------*/
 
