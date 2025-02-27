@@ -81,7 +81,7 @@ marquee{
       grid-template-columns: 1fr;
   }
     .latest-img img{
-        width:150%;
+        width:130%;
         height:180px;
     }
 }
