@@ -50,6 +50,7 @@ marquee{
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  gap:10px;
 }
 
 .latest-news {
