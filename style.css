@@ -40,7 +40,7 @@ marquee{
 .content {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 
 .latest-img {
