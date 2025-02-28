@@ -49,104 +49,97 @@
     <section class="location">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3864.2265421351854!2d78.23311967486893!3d14.414100186050437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb3ebb20e9d78fd%3A0xc274721f5e7a7a53!2sLoyola%20Polytechnic%20College%2CPulivendula!5e0!3m2!1sen!2sin!4v1734953027353!5m2!1sen!2sin"
-        width="600"
-        height="450"
-        style="border: 0"
         allowfullscreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        data-aos="fade-left" data-aos-duration="2000"
+        class="map"
+        data-aos="fade-left"
+        data-aos-duration="2000"
       ></iframe>
     </section>
-
+    
     <section class="contact-us">
       <div class="row">
+        <!-- Contact Details -->
         <div class="contact-col">
-          <div>
-            <i class="fa fa-home" data-aos="fade-right" data-aos-duration="1500"></i>
-            <span>
-              <h5 data-aos="fade-right" data-aos-duration="1500">Loyola Polytechnic College (YSRR)</h5>
-              <p data-aos="fade-right" data-aos-duration="1500">Pulivendla - 516390, YSR District,
-                Andhra Pradesh, India.</p>
-            </span>
+          <div class="contact-box" data-aos="fade-right" data-aos-duration="1500">
+            <i class="fa fa-home"></i>
+            <h5>Loyola Polytechnic College (YSRR)</h5>
+            <p>Pulivendla - 516390, YSR District, Andhra Pradesh, India.</p>
           </div>
-
-          <div>
-            <i class="fa fa-phone" data-aos="fade-right" data-aos-duration="1500"></i>
-            <span>
-              <h5 data-aos="fade-right" data-aos-duration="1500">+91 9912342029, 08568 - 286309</h5>
-              <p data-aos="fade-right" data-aos-duration="1500">call us for queries</p>
-            </span>
+    
+          <div class="contact-box" data-aos="fade-right" data-aos-duration="1700">
+            <i class="fa fa-phone"></i>
+            <h5>+91 9912342029, 08568 - 286309</h5>
+            <p>Call us for queries</p>
           </div>
-
-          <div>
+    
+          <div class="contact-box" data-aos="fade-right" data-aos-duration="1900">
             <i class="fa fa-envelope-o"></i>
-            <span>
-              <h5 data-aos="fade-right" data-aos-duration="1500">loyolapoly.pulivendla@gmail.com</h5>
-              <p data-aos="fade-right" data-aos-duration="1500">Email us for queries</p>
-            </span>
+            <h5>loyolapoly.pulivendla@gmail.com</h5>
+            <p>Email us for queries</p>
           </div>
         </div>
-
+    
+        <!-- Contact Form -->
         <div class="contact-col">
           <form id="contact-form">
-              <input type="text" name="name" placeholder="Enter your name" required data-aos="fade-left" data-aos-duration="1400"/>
-              <input type="email" name="email" placeholder="Enter your email" required data-aos="fade-left" data-aos-duration="1600"/>
-              <input type="text" name="subject" placeholder="Enter your subject" required  data-aos="fade-left" data-aos-duration="1800"/>
-              <textarea name="message" placeholder="Message" rows="10" required data-aos="fade-left" data-aos-duration="2000"></textarea>
-              <button type="submit" class="hero-btn red-btn" data-aos="fade-left" data-aos-duration="2200">Send Message</button>
+            <input type="text" name="name" placeholder="Enter your name" required data-aos="fade-left" data-aos-duration="1400"/>
+            <input type="email" name="email" placeholder="Enter your email" required data-aos="fade-left" data-aos-duration="1600"/>
+            <input type="text" name="subject" placeholder="Enter your subject" required data-aos="fade-left" data-aos-duration="1800"/>
+            <textarea name="message" placeholder="Message" rows="5" required data-aos="fade-left" data-aos-duration="2000"></textarea>
+            <button type="submit" class="hero-btn" data-aos="fade-left" data-aos-duration="2200">Send Message</button>
           </form>
+        </div>
       </div>
-      
-      <script>
-      document.getElementById('contact-form').addEventListener('submit', function(event) {
-          event.preventDefault();
-      
-          // Collect form data
-          const formData = new FormData(this);
-      
-          // Send form data using AJAX
-          const xhr = new XMLHttpRequest();
-          xhr.open('POST', 'form_handler.php', true);
-          xhr.onreadystatechange = function() {
-              if (xhr.readyState === XMLHttpRequest.DONE) {
-                  if (xhr.status === 200) {
-                      alert('Message sent successfully!');
-                      // You can update the UI as needed here
-                  } else {
-                      alert('Error sending message.');
-                  }
-              }
-          };
-          xhr.send(formData);
-      });
-      </script>
-      
     </section>
+    
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        const formData = new FormData(this);
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'form_handler.php', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    alert('Message sent successfully!');
+                    document.getElementById('contact-form').reset();
+                } else {
+                    alert('Error sending message.');
+                }
+            }
+        };
+        xhr.send(formData);
+    });
+    </script>
+    
     <!-- ----------footer---------------- -->
 
-    <section class="footer">
+    <section class="footer" data-aos="fade-up" data-aos-duration="2000">
+      <div class="footer-shape"></div>
       <div class="footer-container">
-          <div class="footer-section">
+          <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
               <h3>Contact Us</h3>
-              <p>Loyola Polytechnic,</p>
-              <p>Pulivendula, Kadapa</p>
-              <p>Email: loyolapoly.pulivendla@gmail.com</p>
-              <p>Phone: +91 9912342029</p>
+              <p><i class="fas fa-map-marker-alt"></i> Loyola Polytechnic, Pulivendula, Kadapa</p>
+              <p><i class="fas fa-envelope"></i> <a href="mailto:loyolapoly.pulivendla@gmail.com">loyolapoly.pulivendla@gmail.com</a></p>
+              <p><i class="fas fa-phone-alt"></i> <a href="tel:+919912342029">+91 9912342029</a></p>
           </div>
-          <div class="footer-section">
+          
+          <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
               <h3>Quick Links</h3>
               <ul>
-                  <li><a rel="noopener noreferrer" href="https://loyolapolytechnic.co.in/BROCHURE.pdf" target="_blank">Institute Brochure</a></li>
+                  <li><a href="https://loyolapolytechnic.co.in/BROCHURE.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Institute Brochure</a></li>
               </ul>
           </div>
-          <div class="footer-section">
+          
+          <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
               <h3>Developers</h3>
-              <div class="social-media">
-                <h4>K.Bhanu Sai</h4>
-                <h4>M.Hema Sree</h4>
-                <h4>G.Sai Nikhitha</h4>
-                <h4>M.Harshitha</h4>
+              <div class="developers-list">
+                  <span><i class="fas fa-user"></i> K. Bhanu Sai</span></br>
+                  <span><i class="fas fa-user"></i> M. Hema Sree</span></br>
+                  <span><i class="fas fa-user"></i> G. Sai Nikitha</span></br>
+                  <span><i class="fas fa-user"></i> Harshitha</span></br>
               </div>
           </div>
       </div>
@@ -154,24 +147,23 @@
           <p>&copy; 2024 Loyola Polytechnic Pulivendula. All rights reserved.</p>
       </div>
   </section>
-
-    <!--Javascript for Toggle Menu-->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
+  
+  
+  <script>
+      var navLinks=document.getElementById("navLinks");
+      function showMenu(){
+          navLinks.style.right="0";
       }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
+       function hideMenu(){
+          navLinks.style.right="-200px";
       }
-    </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        offset:1
-      })
-    </script>
-  </body>
-</html>
+  </script>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset:1
+    })
+  </script>
+      </body>
+  </html>
