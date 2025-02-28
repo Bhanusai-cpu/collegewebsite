@@ -25,6 +25,9 @@ marquee{
   margin: auto;
   padding:40px;
 }
+.container h1{
+    font-size:20px;
+}
 
 .lat {
   text-align: center;
