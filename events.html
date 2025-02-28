@@ -199,28 +199,30 @@
 
 
 
-    <section class="footer">
+    <section class="footer" data-aos="fade-up" data-aos-duration="2000">
+        <div class="footer-shape"></div>
         <div class="footer-container">
-            <div class="footer-section">
+            <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
                 <h3>Contact Us</h3>
-                <p>Loyola Polytechnic,</p>
-                <p>Pulivendula, Kadapa</p>
-                <p>Email: loyolapoly.pulivendla@gmail.com</p>
-                <p>Phone: +91 9912342029</p>
+                <p><i class="fas fa-map-marker-alt"></i> Loyola Polytechnic, Pulivendula, Kadapa</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:loyolapoly.pulivendla@gmail.com">loyolapoly.pulivendla@gmail.com</a></p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:+919912342029">+91 9912342029</a></p>
             </div>
-            <div class="footer-section">
+            
+            <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a rel="noopener noreferrer" href="https://loyolapolytechnic.co.in/BROCHURE.pdf" target="_blank">Institute Brochure</a></li>
+                    <li><a href="https://loyolapolytechnic.co.in/BROCHURE.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Institute Brochure</a></li>
                 </ul>
             </div>
-            <div class="footer-section">
+            
+            <div class="footer-section" data-aos="fade-right" data-aos-duration="1500">
                 <h3>Developers</h3>
-                <div class="social-media">
-                  <h4>K.Bhanu Sai</h4>
-                  <h4>M.Hema Sree</h4>
-                  <h4>G.Sai Nikitha</h4>
-                  <h4>M.Harshitha</h4>
+                <div class="developers-list">
+                    <span><i class="fas fa-user"></i> K. Bhanu Sai</span></br>
+                    <span><i class="fas fa-user"></i> M. Hema Sree</span></br>
+                    <span><i class="fas fa-user"></i> G. Sai Nikhitha</span></br>
+                    <span><i class="fas fa-user"></i>M. Harshitha</span></br>
                 </div>
             </div>
         </div>
@@ -228,21 +230,23 @@
             <p>&copy; 2024 Loyola Polytechnic Pulivendula. All rights reserved.</p>
         </div>
     </section>
-  
-      <!--Javascript for Toggle Menu-->
+    
+    
     <script>
-      var navLinks = document.getElementById("navLinks");
-
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+         function hideMenu(){
+            navLinks.style.right="-200px";
+        }
     </script>
-  
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  
-</body>
-</html>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:1
+      })
+    </script>
+        </body>
+    </html>
